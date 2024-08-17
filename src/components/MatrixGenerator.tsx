@@ -9,12 +9,12 @@ const MatrixGenerator = ({
   const [columns, setColumns] = useState<number>(0);
 
   return (
-    <div className="container mx-auto p-6 bg-white shadow-md rounded-md ">
+    <div className="container md:mx-auto md:p-6 bg-white shadow-md rounded-md  py-8">
       <h2 className="text-2xl font-bold text-center mb-4 text-gray-700">
         Matrix Generator
       </h2>
       <h1>{/* {rows} {columns} */}</h1>
-      <div className="flex justify-center space-x-4 mb-6">
+      <div className="grid md:grid-cols-3 md:gap-10 md:px-60 px-4 gap-4">
         <input
           type="number"
           placeholder="Rows"

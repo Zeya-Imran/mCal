@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React, { useState } from "react";
 import MatrixGenerator from "../components/MatrixGenerator";
 import Matrix from "../components/Matrix";
@@ -21,7 +21,18 @@ const Home = () => {
 
   return (
     <div className="py-8 min-h-screen bg-slate-100">
-      <h1 className="text-[#FF8343] text-center text-8xl">mCal</h1>
+      <div className="flex justify-center mb-8 ">
+        {/* <Image
+          src="/matrix.png"
+          alt="brand-logo"
+          width={64}
+          height={64}
+          objectFit="contain"
+        /> */}
+        <h1 className="text-[#FF8343] md:text-8xl text-6xl">
+          <span>&#10100;</span>m<span>&#10101;</span>Cal.
+        </h1>
+      </div>
       <MatrixGenerator onGenerate={generateMatrices} />
       <div className="container mx-auto p-6 shadow-md rounded-md">
         <div className="grid md:grid-cols-2 mt-6">
